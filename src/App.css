@@ -7,6 +7,28 @@
   pointer-events: none;
 }
 
+.charList {
+  padding-top: 25px;
+}
+
+.charContainer {
+  background-color: lightgrey;
+  color: black;
+  width: 50vw;
+  border-radius: 20%;
+  height: 75%;
+}
+
+.mainArea {
+  height: 50vw;
+  color: white;
+  background-size: cover;
+  background-color: white;
+  background-image: url("stars.jpg");
+  background-repeat: no-repeat;
+
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
