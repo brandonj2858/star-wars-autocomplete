@@ -41,7 +41,6 @@ class MainContainer extends React.Component {
       const regex = new RegExp(input, 'gi');
       const suggestions = characterNames.filter((name) => (regex.test(name)))
       this.setState({suggestions: suggestions})
-      console.log(this.state.suggestions)
     }
     console.log(this.state.suggestions);
   }
@@ -80,7 +79,7 @@ class MainContainer extends React.Component {
         <div className="searchSuggestions">
         <input className="searchBox" type="text" onChange={this.handleChange} value={this.props.input}/>
 
-        {this.state.suggestions.map((char) => {return <li onClick={(evt) => this.handleClick(evt) } className="suggestionList"> {char}</li>})}
+        {this.state.suggestions.map((char) => {return <li key={char.name} onClick={(evt) => this.handleClick(evt) } className="suggestionList"> {char}</li>})}
 
         </div>
 
