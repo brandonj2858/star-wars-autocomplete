@@ -12,12 +12,17 @@
   list-style-type: none;
 }
 
+.searchSuggestions {
+
+}
+
 .searchBox {
-  margin-left: 35px;
+  margin-left: 40px;
 }
 
 .suggestionList {
   list-style-type: bengali;
+  padding-inline-start: 40px;
 }
 
 .charContainer {

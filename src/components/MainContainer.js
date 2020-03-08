@@ -56,7 +56,9 @@ class MainContainer extends React.Component {
 
         <div className="searchSuggestions">
         <input className="searchBox" type="text" onChange={this.handleChange} value={this.props.input}/>
+
         {this.state.suggestions.map((char) => {return <li className="suggestionList"> {char}</li>})}
+      
         </div>
 
       </div>
