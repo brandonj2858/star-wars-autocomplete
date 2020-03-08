@@ -47,11 +47,17 @@ class MainContainer extends React.Component {
     return(
       <div className='mainArea'>
 
-      <div className="charContainer"><ul className="charList">
-        {this.state.characters.map((character) => {return <li key={character.id}>{character.name}</li>})}</ul>
-        <input type="text" onChange={this.handleChange} value={this.props.input}/>
-        {this.state.suggestions.map((char) => {return <li> {char}</li>})}
+      <div className="charContainer">
+        <div className="allChars">
+        <ul className="charList">
+          {this.state.characters.map((character) => {return <li key={character.id}>{character.name}</li>})}
+        </ul>
+        </div>
 
+        <div className="searchSuggestions">
+        <input className="searchBox" type="text" onChange={this.handleChange} value={this.props.input}/>
+        {this.state.suggestions.map((char) => {return <li className="suggestionList"> {char}</li>})}
+        </div>
 
       </div>
       </div>

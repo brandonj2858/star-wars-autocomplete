@@ -9,11 +9,20 @@
 
 .charList {
   padding-top: 25px;
+  list-style-type: none;
+}
+
+.searchBox {
+  margin-left: 35px;
+}
+
+.suggestionList {
+  list-style-type: bengali;
 }
 
 .charContainer {
   background-color: #131212e3;
-  color: black;
+  color: darkgrey;
   width: 90vw;
   border-radius: 2%;
   height: 100%;
@@ -26,7 +35,7 @@
   background-color: white;
   background-image: url("stars.jpg");
   background-repeat: no-repeat;
-
+  text-align: -webkit-center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
