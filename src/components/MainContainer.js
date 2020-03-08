@@ -72,15 +72,15 @@ class MainContainer extends React.Component {
       <div className="charContainer">
         <div className="allChars">
         <ul className="charList">
-          {this.state.characters.map((character) => {return <li onClick={this.checkUrl} key={character.url.split("").reverse()[1]}>{character.url}</li>})}
+          {this.state.characters.map((character) => {return <li key={character.url.split("").reverse()[1]}>{character.name}</li>})}
         </ul>
         </div>
 
         <div className="searchSuggestions">
-        <input className="searchBox" type="text" onChange={this.handleChange} value={this.props.input}/>
+        <input className="searchBox" type="text" placeHolder="Search Here" onChange={this.handleChange} value={this.props.input}/>
 
         {this.state.suggestions.map((char) => {return <li key={char.name} onClick={(evt) => this.handleClick(evt) } className="suggestionList"> {char}</li>})}
-
+        
         </div>
 
         <div className="characterView">

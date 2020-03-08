@@ -10,6 +10,7 @@
 .charList {
   padding-top: 25px;
   list-style-type: none;
+  font-family: monospace;
 }
 
 .charCard {
@@ -22,6 +23,7 @@
 
 .characterView {
   padding-top: 30px;
+  padding-inline-start: 40px;
 }
 
 .charInfo {
@@ -30,15 +32,18 @@
 }
 
 .searchSuggestions {
-
+  padding-top: 25px;
 }
 
 .searchBox {
   margin-left: 40px;
+  width: 125px;
+  margin-bottom: 25px;
 }
 
 .suggestionList {
   list-style-type: bengali;
+  
   padding-inline-start: 40px;
 }
 
