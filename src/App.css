@@ -12,6 +12,23 @@
   list-style-type: none;
 }
 
+.charCard {
+  border-radius: 20%;
+  width: 30%;
+  border-style: groove;
+  border-color: #2d444ca8;
+  font-family: monospace;
+}
+
+.characterView {
+  padding-top: 30px;
+}
+
+.charInfo {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
 .searchSuggestions {
 
 }

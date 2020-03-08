@@ -1,11 +1,13 @@
 import React, {Component, useEffect, useState} from 'react';
 import SearchArea from './SearchArea';
+import CharacterCard from './CharacterCard';
 
 class MainContainer extends React.Component {
 
   constructor(props) {
     super(props)
     this.handleChange = this.handleChange.bind(this);
+
     this.state = {
       characters: [],
       matches: [],
@@ -41,6 +43,7 @@ class MainContainer extends React.Component {
       this.setState({suggestions: suggestions})
       console.log(this.state.suggestions)
     }
+    console.log(this.state.suggestions);
   }
 
   handleClick(evt) {
@@ -52,6 +55,15 @@ class MainContainer extends React.Component {
     console.log(this.state.selectedCharacter)
   }
 
+  /* Help with setting key
+  checkUrl(evt) {
+    const characterUrls = this.state.characters.map((char) => {
+      return char.url.split("").reverse()[1]
+    })
+    console.log(characterUrls)
+
+  } */
+
 
 
   render() {
@@ -61,7 +73,7 @@ class MainContainer extends React.Component {
       <div className="charContainer">
         <div className="allChars">
         <ul className="charList">
-          {this.state.characters.map((character) => {return <li key={character.id}>{character.name}</li>})}
+          {this.state.characters.map((character) => {return <li onClick={this.checkUrl} key={character.url.split("").reverse()[1]}>{character.url}</li>})}
         </ul>
         </div>
 
@@ -74,17 +86,7 @@ class MainContainer extends React.Component {
 
         <div className="characterView">
         {this.state.selectedCharacter.map((char) => {
-          return(
-          <div>
-          <li>Name: {char.name}</li>
-          <li>Height: {char.height}</li>
-          <li>Mass: {char.mass}</li>
-          <li>Hair: {char.hair_color}</li>
-          <li>Skin Color: {char.skin_color}</li>
-          <li>Eyes: {char.eye_color}</li>
-          <li>DOB: {char.birth_year}</li>
-          <li>Gender: {char.gender}</li>
-          </div>)
+          return( <CharacterCard character={this.state.selectedCharacter} />)
         })}
 
         </div>
