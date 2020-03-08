@@ -36,10 +36,7 @@
 .mainArea {
   height: 50vw;
   color: white;
-  background-size: cover;
-  background-color: white;
-  background-image: url("stars.jpg");
-  background-repeat: no-repeat;
+
   text-align: -webkit-center;
 }
 
