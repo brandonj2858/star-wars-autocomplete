@@ -39,16 +39,8 @@ class MainContainer extends React.Component {
       const suggestions = characterNames.filter((name) => (regex.test(name)))
       this.setState({suggestions: suggestions})
     }
-
-
-
   }
 
-  displayMatches(event, match) {
-
-
-
-  }
 
 
   render() {

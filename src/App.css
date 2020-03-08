@@ -12,11 +12,11 @@
 }
 
 .charContainer {
-  background-color: lightgrey;
+  background-color: #131212e3;
   color: black;
-  width: 50vw;
-  border-radius: 20%;
-  height: 75%;
+  width: 90vw;
+  border-radius: 2%;
+  height: 100%;
 }
 
 .mainArea {
