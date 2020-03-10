@@ -43,13 +43,13 @@
 
 .suggestionList {
   list-style-type: bengali;
-  
+
   padding-inline-start: 40px;
 }
 
 .charContainer {
   background-color: #131212e3;
-  color: darkgrey;
+  color: blanchedalmond;
   width: 90vw;
   border-radius: 2%;
   height: 100%;
